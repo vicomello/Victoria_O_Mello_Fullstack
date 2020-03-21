@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="static/page.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Victoria</title>
+</head>
+
+{% block main %}
+<body>
+<div class="container mt">
+
+    <div class="card bg-light text-dark">
+        <div class="card-body">
+            <form action="/" method="post">
+                <h4 class="text-center"> Esta aplicação web retorna os divisores de um número natural ou indica se um
+                    número natural
+                é primo.</h4>
+                <h5 class="text-center"> Para usá-la, basta inserir um número natural, clicar em "calcular" e conferir
+                    os resultados da análise.</h5>
+                <div class="text-center">
+                    <div class="col-centered">
+                        <input type="number" class="form-control mb col-sm-3 text-center mx-auto" id="number"
+                               name="number" placeholder="Número">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb">Calcular</button>
+                </div>
+            </form>
+            <h5 class="text-center mb"> {{message}} </h5>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

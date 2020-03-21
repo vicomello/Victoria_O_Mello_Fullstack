@@ -1,0 +1,10 @@
+.mt {
+    margin-top: 70pt;
+}
+.mb{
+    margin-top: 20pt;
+}
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
