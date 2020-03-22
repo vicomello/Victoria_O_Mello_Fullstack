@@ -16,7 +16,8 @@ Werkzeug==1.0.0
 
 
 ## Como rodar
-```git clone https://github.com/vicomello/Victoria_O_Mello_Fullstack.git
+```
+git clone https://github.com/vicomello/Victoria_O_Mello_Fullstack.git
 cd ./Victoria_O_Mello_Fullstack
 pip install -r requirements.txt
 set flask_app=application.py
