@@ -1,3 +1,6 @@
+### Fullstack folder ###
+fullstack/
+
 ### Flask ###
 instance/*
 !instance/.gitignore
