@@ -3,8 +3,6 @@ import csv
 
 app = Flask(__name__)
 
-cors = CORS(app, resource{r"/*":{"origins": "*"}})
-
 @app.route("/", methods=["GET", "POST"])
 def calcular():
     # Abrindo o arquivo em que serão salvos os resultados
