@@ -16,10 +16,20 @@ Werkzeug==1.0.0
 
 
 ## Como rodar
+### No Windows 
 ```
-git clone https://github.com/vicomello/Victoria_O_Mello_Fullstack.git
+git clone https://github.com/vicomello/Victoria_O_Mello_Fullstack.git --depth 1
 cd ./Victoria_O_Mello_Fullstack
 pip install -r requirements.txt
 set flask_app=application.py
 flask run
 ```
+### No Linux ou Mac OS
+```
+git clone https://github.com/vicomello/Victoria_O_Mello_Fullstack.git --depth 1
+cd ./Victoria_O_Mello_Fullstack
+pip install -r requirements.txt
+export flask_app=application.py
+flask run
+```
+
