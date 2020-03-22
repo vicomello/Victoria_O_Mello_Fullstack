@@ -1,6 +1,7 @@
 ### Fullstack folder ###
 fullstack/
 .idea/
+.data.csv
 
 ### Flask ###
 instance/*
@@ -10,6 +11,7 @@ instance/*
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
 *.py[cod]
 *$py.class
 
