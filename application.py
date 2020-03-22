@@ -6,9 +6,15 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def calcular():
     # Abrindo o arquivo em que serão salvos os resultados
-    f = open("data.csv", "a", newline='')
     fieldnames = ['numero', 'resultado']
-    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    try:
+        f = open("data.csv", "x", newline='')
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+
+    except FileExistsError:
+        f = open("data.csv", "a", newline='')
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
 
     divisores = list()
     if request.method == "GET":
