@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def calcular():
     # Abrindo o arquivo em que serão salvos os resultados
-    file = open("data.csv", "a", newline='')
+    f = open("data.csv", "a", newline='')
     fieldnames = ['numero', 'resultado']
-    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
 
     divisores = list()
     if request.method == "GET":
@@ -33,5 +33,5 @@ def calcular():
         else:
             message = "Você deve digitar um número natural!"
 
-        file.close()
+        f.close()
         return render_template("page.html", message=message)
